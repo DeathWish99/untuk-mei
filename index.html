@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RevoU TL Sim Week 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a TL Simulation Website for RevoU Students">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="css/kube.min.css" /> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+			    <nav id="navbar-1" class="navbar item-nav">
+					<div id="logo">
+						<img src="img/revou-logo.jpg">
+					</div>
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#educations">Education</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+	<main class="main-container">
+		<section class="skills-section">
+			<!-- Introduction -->
+			<div class="intro section" id="about">
+				<div class="container">
+					<p>Hi, I’m Kevin Trisnadi Nugroho</p>
+					<div class="units-row units-split wrap">
+						<div class="unit-20">
+							<img src="img/portrait.jpg" alt="Avatar">
+						</div>
+						<div class="unit-80">
+							<h1>I am a<br><span id="typed"></span></h1>
+						</div>
+						<p>
+							Welcome to this TL Simulation! Today we will be demoing on how to to properly style and design a webpage using HTML and CSS. Semantics, Forms, Flexboxes, and Responsiveness are all included! Please enjoy, and lets learn together!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="experiences">
+				<!-- Work Experience -->
+				<div class="work section second" id="experiences">
+					<div class="container">
+						<h1>Work Experiences</h1>
+						<ul class="work-list">
+							<li>2023-Now</li>
+							<li><a href="#">Anacle Systems Limited</a></li>
+							<li>Full Stack Web Developer</li>
+						</ul>
+						<ul class="work-list">
+							<li>2021-2022</li>
+							<li><a href="#">Labster</a></li>
+							<li>Content Developer</li>
+						</ul>
+						<ul class="work-list">
+							<li>2019-2021</li>
+							<li><a href="#">Binus University</a></li>
+							<li>Jr. Full Stack Programmer</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Education -->
+				<div class="education section second" id="educations">
+					<div class="container">
+						<h1>Education</h1>
+						<ul class="education-list list-flat">
+							<li>2017-2021</li>
+							<li>Binus University</li>
+							<li>Bachelor's Degree</li>
+						</ul>
+						<ul class="education-list list-flat">
+							<li>Feb 2020 - Aug 2020</li>
+							<li>National Taipei University of Technology</li>
+							<li>Study Abroad Program</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Technical Skills -->
+				<div class="skills section second" id="skills">
+					<div class="container">
+						<h1>Technical<br>Skills</h1>
+						<ul class="skill-list list-flat">
+							<li>Web Technology</li>
+							<li>HTML / CSS / Javascript / XML</li>
+						</ul>
+						<ul class="skill-list list-flat">
+							<li>Database</li>
+							<li>SQL Server / SQLlite / Firebase / MongoDB</li>
+						</ul>
+						<ul class="skill-list list-flat">
+							<li>Framework</li>
+							<li>.NET / CodeIgniter / Electron / Node JS</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section id="imageContainer" class="image-container">
+			<picture>
+				<source media="(max-width: 800px)" srcset="img/resumePic_resize.jpg">
+				<source media="(min-width: 801px)" srcset="img/resumePic.jpg">
+				<img src="img/resumePic.jpg" class="img-resume">
+			</picture>
+		</section>
+	</main>
+	
+	<!-- Form modal-->
+	<div id="formContainer" class="form-container">
+		<dialog id="formDialog" class="modal-form" open="true">
+			<div class="modal-header">
+				<h2>Contact me!</h2>
+				<a href="#" class="close">&times;</a>
+			</div>
+			<div class="modal-content">
+				<form method="dialog" id="contactForm">
+					<legend>Fill in your details</legend>
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name" required />
+					  </div>
+					  <div>
+						<label for="email">Email:</label>
+						<input type="email" id="email" required />
+					  </div>
+					  <div>
+						<label for="phone">Phone:</label>
+						<input type="tel" id="phone" required />
+					  </div>
+					  <div>
+						<label for="color">Color:</label>
+						<input type="color" id="color " required />
+					  </div>
+					  <div>
+						<label for="description">Describe your company!:</label><br>
+						<textarea id="description" cols="20" rows="10" maxlength="500" required></textarea>
+					  </div>
+					  <div>
+						<label for="location">Company Location:</label>
+						<div class="location">
+						  <input type="radio" id="national" name="location" value="National" />
+						  <label for="National">National</label>
+						  <input type="radio" id="international" name="location" value="international" />
+						  <label for="international">International</label>
+						</div>
+					  </div>
+					  <input type="submit" id="submit" onclick="">
+				</form>
+			</div>
+		</dialog>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer-content">
+			    <div class="unit-50">
+			    	<p>For Revou Students' Learning Purposes</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="#formContainer"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://github.com/DeathWish99"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/kevin-trisnadi/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.instagram.com/kevin.trisnadi/"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <!-- <script src="js/kube.min.js"></script> -->
+    <!-- <script src="js/site.js"></script> -->
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		strings: ["software engineer", "game developer", "big brother"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+
+		$('#submit').click(function() {
+		if ( ! $('form input:invalid' ).length ) {
+			setTimeout(function() {$('#formContainer').css({'visibility':'hidden', 'display':'none'}); alert("Form submitted. Thank you!");}, 500);
+			location.href= '#'
+		}
+		});
+    </script>
+</body>
+</html>
